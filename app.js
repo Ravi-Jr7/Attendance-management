@@ -171,14 +171,14 @@ var controller = (function() {
       if (pendingLeaves >= leaveInfo[1]) {
         setPendingLeaves(leaveInfo[0], getdiffernece(leaveInfo[1], pendingLeaves));
         setAvailedLeaves(leaveInfo[0], getAdd(leaveInfo[1], availedleaves));
-        alert('Leave Applied: ' + leaveInfo[0] + '\nDays: ' + leaveInfo[1] + '\nEnjoy UMA.............');
+        alert('Leave Applied: ' + leaveInfo[0] + '\nDays: ' + leaveInfo[1] + '\nEnjoy MR.GANGAVARAPU UMA MAHESH');
       } else {
-        alert('Please select leaves correctly UMA...');
+        alert('Please select leaves correctly MR.GANGAVARAPU UMA MAHESH');
       }
     } else if (leaveInfo === 'invalid dates'){
-      alert('Please select valid leaves UMA...');
+      alert('Please select valid leaves MR.GANGAVARAPU UMA MAHESH');
     } else {
-      alert('Please select correct leave type UMA...');
+      alert('Please select correct leave type MR.GANGAVARAPU UMA MAHESH');
     }
   }
 
