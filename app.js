@@ -7,6 +7,8 @@ var controller = (function() {
     document.querySelector('.toDate').addEventListener('change', getToDate);
     document.querySelector('.leaveType').addEventListener('change', getLeaveType);
     document.querySelector('.requestLeave').addEventListener('click', validate);
+    document.querySelector('.fromDate').addEventListener('blur', setEffectiveDays);
+    document.querySelector('.toDate').addEventListener('blur', setEffectiveDays);
     document.querySelector('.checkEffectiveDays').addEventListener('click', setEffectiveDays);
     console.log("EventListener setup compvare");
   }
@@ -110,7 +112,7 @@ var controller = (function() {
     }
     var diff = getdiffernece(from, to);
     if (diff) {
-      effectiveDays.value = String(diff);
+      effectiveDays.value = String(diff + 1);
     } else {
       effectiveDays.value = "Not valid";
     }
